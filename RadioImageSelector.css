@@ -1,0 +1,105 @@
+/* Radio image selector container */
+
+.radio-image-selector {
+    text-align: center;
+    margin-top: 60px;
+    background-color: rgba(240, 248, 255, 0.096);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 14px;
+    border: 2px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+/* Container for radio options */
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* Individual radio option container */
+
+.option-container {
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+/* Image container */
+
+.image-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #ccc;
+    /* Default background color for image container */
+}
+
+
+/* Image within the container */
+
+.option-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+/* Custom radio button */
+
+.radio-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* Styled appearance for the radio button */
+
+.custom-radio {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/* Style for the selected radio button */
+
+.radio-input:checked+.custom-radio {
+    background-color: green;
+    border-color: green;
+}
+
+
+/* Selected image display */
+
+.selected-option {
+    margin-top: 30px;
+}
+
+
+/* Styling for the selected image */
+
+.selected-image {
+    width: 150px;
+    /* Adjust width as needed */
+    height: 150px;
+    /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}

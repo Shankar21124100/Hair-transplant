@@ -1,0 +1,12 @@
+.radio-image-selector3 {
+    text-align: center;
+    margin-top: 10%;
+    background-color: rgba(240, 248, 255, 0.096);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 14px;
+    border: 2px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}

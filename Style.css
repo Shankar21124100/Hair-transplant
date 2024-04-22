@@ -1,0 +1,50 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* .app {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+} */
+
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    position: relative;
+    height: 40px;
+    width: 600px;
+    background-color: rgb(233, 236, 239);
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 35%;
+}
+
+.progress span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bold;
+}
+
+.progress div {
+    height: 100%;
+    background-color: green;
+    transition: width 0.3s ease;
+}

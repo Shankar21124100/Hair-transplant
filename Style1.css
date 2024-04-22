@@ -1,0 +1,640 @@
+/* styles.css (or your preferred CSS file) */
+
+.select1 {
+    text-align: center;
+    margin-top: 10%;
+    background-color: rgba(240, 248, 255, 0.096);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 14px;
+    border: 2px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.text_box {
+    position: relative;
+    font-weight: 100;
+    font-size: 2em;
+    text-align: center;
+}
+
+.text_box .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.select {
+    text-align: center;
+    margin-top: 60px;
+    background-color: rgba(240, 248, 255, 0.096);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 14px;
+    border: 2px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.option-container {
+    margin-bottom: 10px;
+}
+
+.option-image {
+    width: 100px;
+    /* Adjust as needed */
+    height: 100px;
+    /* Adjust as needed */
+    object-fit: cover;
+}
+
+.radio-input {
+    display: none;
+    /* Hide the radio button input */
+}
+
+.radio-label {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+/* Style the radio button appearance */
+
+.radio-label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+
+
+/* Style the radio button when checked */
+
+.radio-input:checked+.radio-label::before {
+    background-color: green;
+    border-color: green;
+}
+
+.radio-label input[type="radio"]:checked+.radio-button {
+    background-color: #007bff;
+    /* Change color when checked */
+    border-color: #007bff;
+}
+
+.radio-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.option-container {
+    margin: 10px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    /* border-radius: 8px;
+    background-color: rgb(138, 121, 101); */
+    /* Added background color for image container */
+}
+
+.option-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Hover effect: Scale up image on hover */
+
+.option-container:hover .option-image {
+    transform: scale(1.1);
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+}
+
+.radio-input {
+    display: none;
+    /* Hide the radio button input */
+}
+
+.radio-label {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+/* Style the radio button appearance */
+
+.radio-label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+
+
+/* Style the radio button when checked */
+
+.radio-input:checked+.radio-label::before {
+    background-color: green;
+    border-color: green;
+}
+
+.selected-option {
+    margin-top: 30px;
+}
+
+.selected-image {
+    width: 10%;
+    /* Adjusted width for selected image */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+    /* Add additional styles for selected image */
+}
+
+
+/* Style1.css */
+
+.duration-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.duration-card {
+    border: 2px solid #1817176b;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 10%;
+    font-size: 40px;
+}
+
+.progress-container {
+    width: 80%;
+    /* Adjust the width of the progress bar container */
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 0px;
+    /* Ensure the container has enough height for the progress bar */
+    height: 30px;
+    /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar {
+    /* Use height: 100% to fill the parent container height */
+    height: 30px;
+    background-color: #007bff;
+    /* Blue color for the progress bar */
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+/* Select.css */
+
+
+/* Styles for the button */
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #20b661;
+    color: white;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 15%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* // yeas */
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.radio-input {
+    display: none;
+    /* Hide the actual radio input */
+}
+
+.radio-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    /* Default border color */
+}
+
+.selected {
+    background-color: blue;
+    /* Change background color when selected */
+    border-color: blue;
+    /* Change border color when selected */
+}
+
+
+/* Date */
+
+
+/* DatePickerStyles.css */
+
+
+/* Style the container */
+
+.date-picker-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+/* Style the DatePicker */
+
+.custom-datepicker {
+    width: 500px;
+    height: 50px;
+    /* Set desired width */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #10af67;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* Set background color */
+}
+
+
+/* Style the DatePicker input field */
+
+.custom-datepicker input {
+    width: 100%;
+    height: 40px;
+    /* Set desired height */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #0a8b4a;
+    /* Set input field background color */
+    color: #333;
+    /* Set text color */
+}
+
+
+/* Style the DatePicker selected date color */
+
+.custom-datepicker .react-datepicker__day--selected {
+    background-color: green;
+    /* Set selected date background color */
+    color: rgb(8, 126, 50);
+    /* Set selected date text color */
+}
+
+
+/* Style1.css */
+
+.select1 {
+    display: flex;
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    margin-top: 20px;
+}
+
+.date-picker-container {
+    width: 30%;
+    /* Set width for the date picker container */
+}
+
+
+/* .image-options-container {
+    display: flex;
+    justify-content: space-between;
+    /* Space out items */
+
+
+/* align-items: center; */
+
+
+/* Center items vertically */
+
+
+/* width: 30%; */
+
+
+/* Set width for the image options container */
+
+
+/* }
+*/
+
+*/
+/* .image-option {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} */
+
+
+/* .image-option img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+} */
+
+
+/* Style1.css */
+
+.select1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.date-picker-container {
+    margin-bottom: 20px;
+}
+
+.image-options-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image-option {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.image-option img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.left {
+    margin-right: 10px;
+    /* Space between left image and date picker */
+}
+
+.right {
+    margin-left: 10px;
+    /* Space between right image and date picker */
+}
+
+
+/* .btn {
+    margin-left: 45%;
+    margin-bottom: -60%;
+    border-radius: 20px;
+    background-color: #0056b3;
+} */
+
+
+/* Style for textarea within the form */
+
+
+/* Style1.css */
+
+.text_box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-wrapper {
+    display: block;
+}
+
+.letters {
+    font-size: 24px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    background-color: rgba(240, 248, 255, 0.096);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 14px;
+    border: 2px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea-container {
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+label {
+    font-weight: bold;
+    display: flex;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    /* Add margin below the textarea */
+}
+
+.button-container {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Gölgeli kutu stilini burada tanımlayın */
+    padding: 10px;
+    /* İstenilen iç boşluğu ayarlayın */
+}
+
+.btn1 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    /* Use absolute positioning */
+    bottom: 200px;
+    /* Adjust the top position as needed */
+    left: 53%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Center horizontally */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    /* Use absolute positioning */
+    /* Adjust the top position as needed */
+    left: 53%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+}
+
+
+/* result */
+
+
+/* Custom Button Styles */
+
+.submit-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    width: 30%;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    /* Ensure the button behaves like a block element */
+    margin-left: 18%;
+    /* Center the button horizontally */
+}
+
+.continue-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    /* Green color for continue button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 30%;
+    width: 25%;
+}
+
+.continue-btn:hover {
+    background-color: #218838;
+    /* Darker green color on hover */
+}
+
+.form-container1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    background-color: rgba(240, 248, 255, 0.096);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 14px;
+    border: 2px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea-container label {
+    display: block;
+    margin-bottom: 16px;
+    display: flex;
+    /* Add vertical spacing between input fields */
+}
+
+.textarea-container label {
+    display: block;
+    margin-bottom: 16px;
+    /* Add vertical spacing between input fields */
+}
+
+.textarea-container input,
+.textarea-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    /* Adjust vertical margin for inputs */
+}
+
+.textarea-container input[type="email"],
+.textarea-container input[type="tel"] {
+    font-size: 16px;
+    /* Set a consistent font size for input fields */
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    /* Set font size for error messages */
+}

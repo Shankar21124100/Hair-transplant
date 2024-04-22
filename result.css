@@ -1,0 +1,114 @@
+/* Result Component CSS */
+
+.result-text_box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    /* Adjusted width for responsiveness */
+    margin: 5% auto;
+    height: 65vh;
+    /* Add box shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Customize shadow color and opacity */
+    border-radius: 8px;
+    /* Add border radius for rounded corners */
+}
+
+.result-textarea-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.result-textarea-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.result-textarea-container textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.result-input-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.result-input-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.result-input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.result-input-container input[type="email"],
+.result-input-container input[type="tel"] {
+    /* Styling specific to email and telephone inputs */
+    width: 100%;
+}
+
+.result-input-container input::placeholder {
+    color: #ccc;
+}
+
+.result-input-container .error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.result-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result-btn-container button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.result-btn-container button:hover {
+    background-color: #b3001b;
+}
+
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .result-form-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .result-form-container {
+        width: 90%;
+    }
+}
